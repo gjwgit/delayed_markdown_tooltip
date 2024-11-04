@@ -1,6 +1,6 @@
-/// A delayed tooltip to avoid clutter of tooltips.
+/// A tooltip supporting markdown with a popup dely to avoid clutter of tooltips.
 //
-// Time-stamp: <Monday 2024-11-04 20:18:01 +1100 Graham Williams>
+// Time-stamp: <Tuesday 2024-11-05 09:07:18 +1100 Graham Williams>
 //
 /// Copyright (C) 2023-2024, Togaware Pty Ltd.
 ///
@@ -23,20 +23,18 @@
 ///
 /// Authors: Graham Williams
 
-library delayed_markdown_tooltip;
+library markdown_tooltip;
 
 import 'package:flutter/material.dart';
 
 import 'package:flutter_markdown/flutter_markdown.dart';
 
-import 'package:delayed_markdown_tooltip/delayed_markdown_tooltip.dart';
-
 /// A [Tooltip] delayed before being displayed default and supporting MarkDown.
 
-class DelayedMarkdownTooltip extends StatelessWidget {
+class MarkdownTooltip extends StatelessWidget {
   /// Identify the required parameters.
 
-  const DelayedMarkdownTooltip({
+  const MarkdownTooltip({
     required this.child,
     required this.message,
     super.key,

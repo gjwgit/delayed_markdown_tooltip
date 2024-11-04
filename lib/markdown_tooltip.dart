@@ -1,6 +1,6 @@
-/// A delayed tooltip to avoid clutter of tooltips.
+/// A tooltip supporting markdown and a delay to avoid clutter of tooltips.
 //
-// Time-stamp: <Monday 2024-11-04 18:55:08 +1100 Graham Williams>
+// Time-stamp: <Tuesday 2024-11-05 09:09:00 +1100 Graham Williams>
 //
 /// Copyright (C) 2023-2024, Togaware Pty Ltd.
 ///
@@ -23,8 +23,8 @@
 ///
 /// Authors: Graham Williams
 
-library delayed_markdown_tooltip;
+library markdown_tooltip;
 
-export 'src/widgets/delayed_markdown_tooltip.dart' show DelayedMarkdownTooltip;
+export 'src/widgets/markdown_tooltip.dart' show MarkdownTooltip;
 
 export 'src/utils/word_wrap.dart' show wordWrap;

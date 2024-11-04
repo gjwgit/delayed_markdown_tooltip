@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/delayed_markdown_tooltip.iml" filepath="$PROJECT_DIR$/delayed_markdown_tooltip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/markdown_tooltip.iml" filepath="$PROJECT_DIR$/markdown_tooltip.iml" />
     </modules>
   </component>
 </project>

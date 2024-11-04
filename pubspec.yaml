@@ -1,5 +1,5 @@
-name: delayed_markdown_tooltip
-description: "A new Flutter package project."
+name: markdown_tooltip
+description: "A tooltip supporting markdown and delayed popup to avoid cluster."
 version: 0.0.2
 homepage:
 
