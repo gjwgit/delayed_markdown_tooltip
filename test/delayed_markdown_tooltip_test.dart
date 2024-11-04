@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:delayed_tooltip/delayed_tooltip.dart';
+import 'package:delayed_markdown_tooltip/delayed_markdown_tooltip.dart';
 
 void main() {
   test('adds one to input values', () {
