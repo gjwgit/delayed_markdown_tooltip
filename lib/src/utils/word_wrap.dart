@@ -1,6 +1,6 @@
 /// Word wrap a string for displaying in a tooltip.
 //
-// Time-stamp: <Monday 2024-11-04 15:56:50 +1100 Graham Williams>
+// Time-stamp: <Monday 2024-11-04 17:24:26 +1100 Graham Williams>
 //
 /// Copyright (C) 2024, Togaware Pty Ltd
 ///
@@ -23,7 +23,7 @@
 ///
 /// Authors: Graham Williams
 
-library;
+library delayed_markdown_template;
 
 String wordWrap(
   String text, {

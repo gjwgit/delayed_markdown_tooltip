@@ -1,6 +1,6 @@
 /// A delayed tooltip to avoid clutter of tooltips.
 //
-// Time-stamp: <Monday 2024-11-04 15:58:11 +1100 Graham Williams>
+// Time-stamp: <Monday 2024-11-04 17:22:56 +1100 Graham Williams>
 //
 /// Copyright (C) 2023-2024, Togaware Pty Ltd.
 ///
