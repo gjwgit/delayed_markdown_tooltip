@@ -1,6 +1,6 @@
 /// A delayed tooltip to avoid clutter of tooltips.
 //
-// Time-stamp: <Monday 2024-11-04 15:56:29 +1100 Graham Williams>
+// Time-stamp: <Monday 2024-11-04 19:02:12 +1100 Graham Williams>
 //
 /// Copyright (C) 2023-2024, Togaware Pty Ltd.
 ///
@@ -26,16 +26,17 @@
 library delayed_markdown_tooltip;
 
 import 'package:flutter/material.dart';
+
 import 'package:flutter_markdown/flutter_markdown.dart';
 
-import '../utils/word_warp.dart';
+import 'package:delayed_markdown_tooltip/src/utils/word_wrap.dart';
 
 /// A [Tooltip] delayed before being displayed default and supporting MarkDown.
 
-class DelayedTooltip extends StatelessWidget {
+class DelayedMarkdownTooltip extends StatelessWidget {
   /// Identify the required parameters.
 
-  const DelayedTooltip({
+  const DelayedMarkdownTooltip({
     required this.child,
     required this.message,
     super.key,

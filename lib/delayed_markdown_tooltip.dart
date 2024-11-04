@@ -1,6 +1,6 @@
 /// A delayed tooltip to avoid clutter of tooltips.
 //
-// Time-stamp: <Monday 2024-11-04 17:22:56 +1100 Graham Williams>
+// Time-stamp: <Monday 2024-11-04 18:55:08 +1100 Graham Williams>
 //
 /// Copyright (C) 2023-2024, Togaware Pty Ltd.
 ///
@@ -27,4 +27,4 @@ library delayed_markdown_tooltip;
 
 export 'src/widgets/delayed_markdown_tooltip.dart' show DelayedMarkdownTooltip;
 
-export 'src/utils/word_wrap.dart' show WordWrap;
+export 'src/utils/word_wrap.dart' show wordWrap;
