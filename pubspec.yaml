@@ -1,7 +1,7 @@
 name: markdown_tooltip
-description: "A tooltip supporting markdown and delayed popup to avoid cluster."
-version: 0.0.2
-homepage:
+description: "A tooltip supporting markdown and delayed popup to avoid clutter."
+version: 0.0.3
+homepage: https://github.com/gjwgit/markdown_tooltip
 
 environment:
   sdk: ^3.5.4
@@ -22,14 +22,14 @@ dev_dependencies:
   # to a paid service. This fork maintains it's compatibility with the
   # latest flutter but is not otherwise maintained or updated.
 
-  dart_code_metrics:
-    git:
-      url: https://github.com/anusii/dart-code-metrics.git
-      ref: dev
+  # dart_code_metrics:
+  #   git:
+  #     url: https://github.com/anusii/dart-code-metrics.git
+  #     ref: dev
 
 dependency_overrides:
   # Required for dart-code-metrics.
-  collection: ^1.19.0
+  # collection: ^1.19.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
