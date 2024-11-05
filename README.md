@@ -62,8 +62,10 @@ welcome.
 ## Sample screenshots
 
 The [Rattle](https://github.com/gjwgit/rattleng) app, with its
-front-end written in Flutter, utilises the `MarkdownTooltip`. In this
+front-end written in Flutter, utilises `MarkdownTooltip`s.  In this
 simple example notice the use of bold to highlight the file types that
-are permitted to be loaded into Rattle.
+are permitted to be loaded into Rattle. Markdown will make bold any
+text between `**` and `**`.
 
 ![](assets/images/rattle_datset_filename_tooltip.png)
+ 
