@@ -1,6 +1,6 @@
 /// A tooltip supporting markdown with a popup dely to avoid clutter of tooltips.
 //
-// Time-stamp: <Tuesday 2024-11-05 09:21:33 +1100 Graham Williams>
+// Time-stamp: <Tuesday 2024-11-05 13:41:15 +1100 Graham Williams>
 //
 /// Copyright (C) 2023-2024, Togaware Pty Ltd.
 ///
@@ -28,6 +28,7 @@ library markdown_tooltip;
 import 'package:flutter/material.dart';
 
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'package:markdown_tooltip/markdown_tooltip.dart';
 
@@ -73,6 +74,11 @@ class MarkdownTooltip extends StatelessWidget {
               message.isEmpty ? 'Tooltip Coming Soon.' : message,
               width: 1000,
             ),
+            onTapLink: (text, href, title) {
+              final Uri url = Uri.parse(href ?? '');
+              launchUrl(url);
+            },
+
             // style: const TextStyle(
             //   fontSize: 18,
             // ),
