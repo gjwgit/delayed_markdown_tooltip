@@ -56,9 +56,14 @@ You can contribute to this package and rreport issues through the
 
 We attempt to respond to issues within 5 days.
 
+Text selection and URL links are not yet supported. Contributions are
+welcome.
+
 ## Sample screenshots
 
 The [Rattle](https://github.com/gjwgit/rattleng) app, with its
-front-end written in Flutter, utilises the `MarkdownTooltip`:
+front-end written in Flutter, utilises the `MarkdownTooltip`. In this
+simple example notice the use of bold to highlight the file types that
+are permitted to be loaded into Rattle.
 
 ![](assets/images/rattle_datset_filename_tooltip.png)
