@@ -3,11 +3,11 @@ A tooltip widget supporting Markdown and with a delayed popup by default.
 ## Features
 
 Tooltips are essential for self documenting apps which guide the user
-through the app, without having to refer to any (and often
-non-existent) user manuals. The default Flutter Tooltip is quite
-plain, though effective. This package adds support for Markdown within
-the tooltip.  It also introduces a delay bey default to avoid clutter
-in instantly popping up tooltips.
+through the app, without having to refer to  user manuals (if they
+exist). The default Flutter Tooltip is quite plain, though
+effective. This package adds support for Markdown within the tooltip.
+It also introduces a delay by default to avoid clutter in instantly
+popping up tooltips.
 
 ## Getting started
 
@@ -28,7 +28,7 @@ dependencies:
 ## Usage
 
 The `MarkdownTooltip` widget is used to wrap another widget for which
-you would like a more attractive tooltip. In this example of an
+you would like a more flexible tooltip. In the below example of an
 `ElevatedButton` the `Icon` child is wrapped with a `MarkdownTooltip`.
 
 ```dart
