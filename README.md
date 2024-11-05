@@ -1,3 +1,7 @@
+[![Pub Package](https://img.shields.io/pub/v/rdflib)](https://pub.dev/packages/markdown_tooltips)
+[![GitHub Issues](https://img.shields.io/github/issues/anusii/rdflib)](https://github.com/gjwgit/markdown_tooltips/issues)
+[![GitHub License](https://img.shields.io/github/license/anusii/rdflib)](https://raw.githubusercontent.com/gjwgit/markdown_tooltips/main/LICENSE)
+
 A tooltip widget supporting Markdown and with a delayed popup by default.
 
 ## Features
