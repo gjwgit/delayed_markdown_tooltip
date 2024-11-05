@@ -55,3 +55,10 @@ You can contribute to this package and rreport issues through the
 [github](https://github.com/gjwgit/markdown_tooltip) repository. 
 
 We attempt to respond to issues within 5 days.
+
+## Sample screenshots
+
+The [Rattle](https://github.com/gjwgit/rattleng) app, with its
+front-end written in Flutter, utilises the `MarkdownTooltip`:
+
+![](assets/images/rattle_datset_filename_tooltip.png)
