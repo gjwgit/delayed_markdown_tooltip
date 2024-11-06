@@ -41,9 +41,13 @@ class MarkdownTooltipSample extends StatelessWidget {
 
       So we can add variable markdown additions that make sense.
 
-      + Bullets are not so sensible
-      +Or maybe it's okay.
+      + Bullets are okay.
 
+      + But they need to be separated by empty lines in the string because we
+      use a word wrap.
+
+      Experiment and enjoy. Give your users a slightly better experience.
+      
       ''',
       child: Text('Hover over the text to show a tooltip.'),
     );

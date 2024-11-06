@@ -65,11 +65,16 @@ welcome.
 
 ## Sample screenshots
 
+The [example](examlpe/lib/main.dart) app shows provides a very simple
+sample of the possible markdown markup.
+
+![](assets/images/screenshot_example_app.png)
+
 The [Rattle](https://github.com/gjwgit/rattleng) app, with its
 front-end written in Flutter, utilises `MarkdownTooltip`s.  In this
 simple example notice the use of bold to highlight the file types that
 are permitted to be loaded into Rattle. Markdown will make bold any
 text between `**` and `**`.
 
-![](assets/images/rattle_datset_filename_tooltip.png)
+![](assets/images/screenshot_rattle_datset_filename_tooltip.png)
  
