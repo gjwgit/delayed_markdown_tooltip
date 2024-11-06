@@ -1,8 +1,8 @@
-/// A tooltip supporting markdown with a popup dely to avoid clutter of tooltips.
-//
-// Time-stamp: <Tuesday 2024-11-05 13:41:15 +1100 Graham Williams>
-//
-/// Copyright (C) 2023-2024, Togaware Pty Ltd.
+/// A tooltip supporting markdown with a popup delay to avoid clutter of tooltips.
+///
+// Time-stamp: <Thursday 2024-11-07 09:10:56 +1100 Graham Williams>
+///
+/// Copyright (c) 2023-2024, Togaware Pty Ltd.
 ///
 /// License: https://www.gnu.org/licenses/gpl-3.0.en.html
 ///
@@ -32,10 +32,30 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'package:markdown_tooltip/markdown_tooltip.dart';
 
-/// A [Tooltip] delayed before being displayed default and supporting MarkDown.
+/// A [Tooltip] supporting
+/// [markdown](https://daringfireball.net/projects/markdown/) with a default
+/// delay before being displayed.
+///
+/// ```dart
+/// ElevatedButton(
+///    onPressed: ...,
+///    child: const MarkdownTooltip(
+///        message: '''
+///
+///        **Save** Tap here to save our future. Visit [the
+///          internet](https://example.net) for details.
+///
+///        ''',
+///        child: Icon(Icons.save),
+///    ),
+///```
+///
+/// The default [Tooltip.waitDuration] fi=or the [Tooltip] widget is 0ms and so
+/// the tooltip is displayed immediately. In my view this can clutter the
+/// app. The default for [MarkdownTooltip] is 1s.
 
 class MarkdownTooltip extends StatelessWidget {
-  /// Identify the required parameters.
+  /// The [MarkdownTooltip] builds a constant [Widget].
 
   const MarkdownTooltip({
     required this.child,
@@ -44,15 +64,15 @@ class MarkdownTooltip extends StatelessWidget {
     this.wait = const Duration(seconds: 1),
   });
 
-  /// The widget to be displayed as the tooltip.
+  /// A widget to be wrapped with this tooltip.
 
   final Widget child;
 
-  /// The message to be displayed.
+  /// A message to be displayed, utilising markdown.
 
   final String message;
 
-  /// How long to delay before displayiung the tooltip.
+  /// How long to delay before displaying this tooltip.
 
   final Duration wait;
 
@@ -66,7 +86,7 @@ class MarkdownTooltip extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           constraints: const BoxConstraints(maxWidth: 350),
           child: MarkdownBody(
-            // Use the text tidying aspects of [wordWrap] so we can present the
+            // Use the text tidying aspects of [wordWrap] so we can present this
             // message using triple quotes and formated with space before and
             // after, which looks a lot nicer in the code. Set the width high to
             // avoid embedded '\n'.
@@ -102,10 +122,4 @@ class MarkdownTooltip extends StatelessWidget {
       child: child,
     );
   }
-}
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
 }

@@ -1,6 +1,6 @@
 /// Word wrap a string for displaying in a tooltip.
 //
-// Time-stamp: <Tuesday 2024-11-05 09:17:56 +1100 Graham Williams>
+// Time-stamp: <Thursday 2024-11-07 09:09:00 +1100 Graham Williams>
 //
 /// Copyright (C) 2024, Togaware Pty Ltd
 ///
@@ -24,6 +24,19 @@
 /// Authors: Graham Williams
 
 library markdown_template;
+
+/// Word wrap [text] so that no line is beyond [width] characters.
+///
+/// ```dart
+/// wordWrap(text: ```
+///
+///    I often word wrap strings that are coded using triple quote. This way I
+///    can paragraph wrap the source code string for a pleasing look and not
+///    worry about how it will be treated when rendered by dart.
+///
+///    ```,
+///    width = 100,
+///)
 
 String wordWrap(
   String text, {
