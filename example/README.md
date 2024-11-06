@@ -2,8 +2,10 @@
 
 See (lib/main.dart) for a simple example.
 
-Run it with
+Run it with:
 
 ```bash
+cd example
+flutter create .
 flutter run
 ```
