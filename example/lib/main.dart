@@ -39,7 +39,7 @@ class MarkdownTooltipSample extends StatelessWidget {
       reminders of functionality, we can slightly extend the tooltips to guide
       the app user in their navigation and use of the app.
 
-      So we can add variable markdown additions that make sense.
+      So we can add various markdown additions that make sense.
 
       + Bullets are okay.
 

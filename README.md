@@ -55,10 +55,8 @@ ElevatedButton(
 
 The tooltip has a delay by default to avoid cluttering our apps.
 
-You can contribute to this package and rreport issues through the
+You can contribute to this package and report issues through the
 [github](https://github.com/gjwgit/markdown_tooltip) repository. 
-
-We attempt to respond to issues within 5 days.
 
 Text selection and URL links are not yet supported. Contributions are
 welcome.
