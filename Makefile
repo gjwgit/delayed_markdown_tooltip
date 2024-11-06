@@ -2,7 +2,7 @@
 #
 # Generic Makefile
 #
-# Time-stamp: <Sunday 2024-05-12 11:16:36 +1000 Graham Williams>
+# Time-stamp: <Thursday 2024-11-07 09:33:06 +1100 Graham Williams>
 #
 # Copyright (c) Graham.Williams@togaware.com
 #
@@ -32,7 +32,6 @@ DEST=/var/www/html/$(APP)
 # else installed in the local user's shares.
 
 INC_BASE=support
-INC_BASE=$(HOME)/.local/share/make
 
 # Specific Makefiles will be loaded if they are found in
 # INC_BASE. Sometimes the INC_BASE is shared by multiple local

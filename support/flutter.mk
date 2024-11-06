@@ -252,11 +252,16 @@ itest:
 
 .PHONY: qtest
 qtest:
-	@echo "Quick integration TEST:"
-	-for t in integration_test/*_test.dart; do flutter test --dart-define=PAUSE=0 --device-id \
-	$(shell flutter devices | grep desktop | perl -pe 's|^[^•]*• ([^ ]*) .*|\1|') \
-	$$t; done
-	@echo $(SEPARATOR)
+	@-if [ -d integration_test ]; then \
+	  echo "Quick integration TEST:"; \
+	  for t in integration_test/*_test.dart; do \
+	    flutter test --dart-define=PAUSE=0 --device-id \
+	            $(shell flutter devices \
+	    | grep desktop | perl -pe 's|^[^•]*• ([^ ]*) .*|\1|') \
+	    $$t; \
+          done; \
+	  echo $(SEPARATOR); \
+	fi
 
 %.qtest:
 	flutter test --dart-define=PAUSE=0 --device-id \
