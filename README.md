@@ -65,7 +65,7 @@ welcome.
 
 ## Sample screenshots
 
-The [example](examlpe/lib/main.dart) app shows provides a very simple
+The [example](example/lib/main.dart) app shows provides a very simple
 sample of the possible markdown markup.
 
 ![](assets/images/screenshot_example_app.png)
