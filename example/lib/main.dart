@@ -1,3 +1,11 @@
+// A minimal example to illustrate MarkdownTooltip
+//
+// Run it with:
+//
+// cd example
+// flutter create .
+// flutter run
+
 import 'package:flutter/material.dart';
 
 import 'package:markdown_tooltip/markdown_tooltip.dart';
@@ -6,7 +14,11 @@ import 'package:markdown_tooltip/markdown_tooltip.dart';
 
 void main() => runApp(const MarkdownTooltipExampleApp());
 
+/// Demonstrator class
+
 class MarkdownTooltipExampleApp extends StatelessWidget {
+  /// Initialise.
+
   const MarkdownTooltipExampleApp({super.key});
 
   @override
@@ -23,7 +35,11 @@ class MarkdownTooltipExampleApp extends StatelessWidget {
   }
 }
 
+/// Define the MarkdownTooltip to use.
+
 class MarkdownTooltipSample extends StatelessWidget {
+  /// Initialise.
+
   const MarkdownTooltipSample({super.key});
 
   @override

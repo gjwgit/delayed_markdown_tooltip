@@ -1,6 +1,6 @@
 name: markdown_tooltip
 description: "A tooltip supporting markdown and delayed popup to avoid clutter."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/gjwgit/markdown_tooltip
 
 environment:
