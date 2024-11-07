@@ -4,6 +4,9 @@
 
 A tooltip widget supporting Markdown and with a delayed popup by default.
 
+Published through the Flutter repository as
+https://pub.dev/packages/markdown_tooltip.
+
 ## Features
 
 Tooltips are essential for self documenting apps which guide the user
