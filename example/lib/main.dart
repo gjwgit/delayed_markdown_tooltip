@@ -51,7 +51,7 @@ class MarkdownTooltipSample extends StatelessWidget {
       flutter run --release
       ```
 
-      An ***ordere list*** example.
+      An ***ordered list*** example.
 
       1. First example
 
