@@ -12,11 +12,10 @@ class MarkdownTooltipExampleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme:
-          ThemeData(tooltipTheme: const TooltipThemeData(preferBelow: false)),
       home: Scaffold(
         appBar: AppBar(title: const Text('MarkdownTooltip Sample')),
-        body: const Center(
+        body: const Padding(
+          padding: EdgeInsets.all(20.0),
           child: MarkdownTooltipSample(),
         ),
       ),
@@ -32,22 +31,38 @@ class MarkdownTooltipSample extends StatelessWidget {
     return const MarkdownTooltip(
       message: '''
 
-      I am a **markdown** tooltip showing the *markdown* markup that we can use
-      to enhance our tooltips.
+      # Markdown Tooltip
+      
+      I am a **markdown** tooltip. Notice the **bold** and *italic* text.
 
-      While recognising that tooltips should normally be quite short and
-      reminders of functionality, we can slightly extend the tooltips to guide
-      the app user in their navigation and use of the app.
-
-      So we can add various markdown additions that make sense.
+      Tooltips should normally be short and are just reminders. But we can
+      slightly extend the tooltips to guide the user in their navigation and
+      use of the app.
 
       + Bullets are okay.
 
-      + But they need to be separated by empty lines in the string because we
-      use a word wrap.
+      + But they need to be separated by empty lines.
+
+      > This line begins with a greater than (>)
+
+      Here's some code:
+      
+      ```
+      flutter run --release
+      ```
+
+      An ***ordere list*** example.
+
+      1. First example
+
+      2. Second example
+
+      ---
 
       Experiment and enjoy. Give your users a slightly better experience.
-      
+
+      ---
+
       ''',
       child: Text('Hover over the text to show a tooltip.'),
     );

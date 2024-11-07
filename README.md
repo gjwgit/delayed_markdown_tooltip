@@ -66,8 +66,10 @@ welcome.
 
 ## Sample screenshots
 
-The [example](example/lib/main.dart) app shows provides a very simple
-sample of the possible markdown markup.
+The [example](example/lib/main.dart) app  provides a very simple
+illustration of some possible markdown markup. To reproduce, simply
+copy the example files then run `flutter create .` followed by
+`flutter run`.
 
 ![](assets/images/screenshot_example_app.png)
 
