@@ -45,8 +45,8 @@ ElevatedButton(
     child: const MarkdownTooltip(
         message: '''
 
-        **Save** Tap here to save our future. Visit [the
-          internet](https://example.net) for details.
+        **Save** Tap here to save our future. Visit *the
+        internet* for details.
 
         ''',
         child: Icon(Icons.save),
