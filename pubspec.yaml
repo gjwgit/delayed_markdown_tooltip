@@ -22,14 +22,14 @@ dev_dependencies:
   # to a paid service. This fork maintains it's compatibility with the
   # latest flutter but is not otherwise maintained or updated.
 
-  # dart_code_metrics:
-  #   git:
-  #     url: https://github.com/anusii/dart-code-metrics.git
-  #     ref: dev
+#   dart_code_metrics:
+#     git:
+#       url: https://github.com/anusii/dart-code-metrics.git
+#       ref: dev
 
-dependency_overrides:
-  # Required for dart-code-metrics.
-  # collection: ^1.19.0
+# dependency_overrides:
+#   # Required for dart-code-metrics.
+#   collection: ^1.19.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
