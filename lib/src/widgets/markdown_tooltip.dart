@@ -1,6 +1,6 @@
 /// A tooltip supporting markdown with a popup delay to avoid clutter of tooltips.
 ///
-// Time-stamp: <Thursday 2024-11-07 09:10:56 +1100 Graham Williams>
+// Time-stamp: <Monday 2024-11-11 17:08:35 +1100 Graham Williams>
 ///
 /// Copyright (c) 2023-2024, Togaware Pty Ltd.
 ///
@@ -33,7 +33,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:markdown_tooltip/markdown_tooltip.dart';
 
 /// A [Tooltip] supporting
-/// [markdown](https://daringfireball.net/projects/markdown/) with a default
+/// [markdown](https://www.markdownguide.org/basic-syntax/) with a default
 /// delay before being displayed.
 ///
 /// ```dart
