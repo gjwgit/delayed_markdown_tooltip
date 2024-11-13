@@ -44,7 +44,7 @@ class MarkdownTooltipSample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MarkdownTooltip(
+    return MarkdownTooltip(
       message: '''
 
       # Markdown Tooltip
@@ -80,7 +80,10 @@ class MarkdownTooltipSample extends StatelessWidget {
       ---
 
       ''',
-      child: Text('Hover over the text to show a tooltip.'),
+      child: ElevatedButton(
+        onPressed: () {},
+        child: const Text('Hover here to show a tooltip.'),
+      ),
     );
   }
 }
