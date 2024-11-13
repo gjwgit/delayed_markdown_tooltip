@@ -1,6 +1,6 @@
 /// A tooltip supporting markdown with a popup delay to avoid clutter of tooltips.
 ///
-// Time-stamp: <Monday 2024-11-11 17:08:35 +1100 Graham Williams>
+// Time-stamp: <Thursday 2024-11-14 07:33:22 +1100 Graham Williams>
 ///
 /// Copyright (c) 2023-2024, Togaware Pty Ltd.
 ///
@@ -105,9 +105,9 @@ class MarkdownTooltip extends StatelessWidget {
           ),
         ),
       ),
-      //message: message,
-      // TODO 20240707 gjw THIS exitDuration WORKS ON DESKTOP BUT DOES NOT SEEM
-      // TO HAVE A AFFECT ON ANDROID.
+
+      // TODO 20240707 gjw THE exitDuration WORKS ON DESKTOP BUT NOT ANDROID?
+
       showDuration: const Duration(seconds: 5),
       waitDuration: wait,
       decoration: BoxDecoration(
