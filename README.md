@@ -1,7 +1,10 @@
+[![Pub](https://img.shields.io/pub/v/flutter_svg.svg)](https://pub.dartlang.org/packages/markdown_tooltip)
 [![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg)](https://flutter.dev/)
 [![Pub Package](https://img.shields.io/pub/v/markdown_tooltip)](https://pub.dev/packages/markdown_tooltip)
 [![GitHub Issues](https://img.shields.io/github/issues/gjwgit/markdown_tooltip)](https://github.com/gjwgit/markdown_tooltip/issues)
 [![GitHub License](https://img.shields.io/github/license/gjwgit/markdown_tooltip)](https://raw.githubusercontent.com/gjwgit/markdown_tooltip/main/LICENSE)
+
+# Markdown Tooltips
 
 A tooltip widget supporting Markdown and with a delayed popup by default.
 
@@ -60,7 +63,7 @@ ElevatedButton(
 The tooltip has a delay by default to avoid cluttering our apps.
 
 You can contribute to this package and report issues through the
-[github](https://github.com/gjwgit/markdown_tooltip) repository. 
+[github](https://github.com/gjwgit/markdown_tooltip) repository.
 
 Text selection and URL links are not yet supported. Contributions are
 welcome.
@@ -81,4 +84,3 @@ are permitted to be loaded into Rattle. Markdown will make bold any
 text between `**` and `**`.
 
 ![](assets/images/screenshot_rattle_datset_filename_tooltip.png)
- 
