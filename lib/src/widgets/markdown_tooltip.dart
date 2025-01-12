@@ -1,6 +1,6 @@
 /// A tooltip supporting markdown with a popup delay to avoid clutter of tooltips.
 ///
-// Time-stamp: <Thursday 2024-11-14 07:33:22 +1100 Graham Williams>
+// Time-stamp: <Monday 2025-01-13 09:12:34 +1100 Graham Williams>
 ///
 /// Copyright (c) 2023-2024, Togaware Pty Ltd.
 ///
@@ -76,9 +76,19 @@ class MarkdownTooltip extends StatelessWidget {
 
   final Duration wait;
 
+  /// Test if the [message] contains a url.
+
+  bool includesLink(String msg) {
+    // The regex matches markdown links in the format [text](url).
+
+    final RegExp pat = RegExp(r'\[([^\]]*)\]\(([^)]+)\)');
+    return pat.hasMatch(msg);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Tooltip(
+      enableTapToDismiss: !includesLink(message),
       richMessage: WidgetSpan(
         alignment: PlaceholderAlignment.baseline,
         baseline: TextBaseline.alphabetic,
