@@ -44,11 +44,14 @@ class MarkdownTooltipSample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MarkdownTooltip(
-      message: '''
+    return Row(
+      spacing: 5,
+      children: [
+        MarkdownTooltip(
+          message: '''
 
       # Markdown Tooltip
-      
+
       I am a **markdown** tooltip. Notice the **bold** and *italic* text.
 
       Tooltips should normally be short and are just reminders. But we can
@@ -62,7 +65,7 @@ class MarkdownTooltipSample extends StatelessWidget {
       > This line begins with a greater than (>)
 
       Here's some code:
-      
+
       ```
       flutter run --release
       ```
@@ -80,10 +83,39 @@ class MarkdownTooltipSample extends StatelessWidget {
       ---
 
       ''',
-      child: ElevatedButton(
-        onPressed: () {},
-        child: const Text('Hover here to show a tooltip.'),
-      ),
+          child: ElevatedButton(
+            onPressed: () {},
+            child: const Text('Hover here for a tooltip with a link.'),
+          ),
+        ),
+        MarkdownTooltip(
+          message: '''
+
+      # Markdown Tooltip with a Link
+
+      This tooltip inlcudes a **link**. Links are included in **markdown** like:
+
+      ```
+      [link](https://example.com)
+      ```
+
+      Normally a tooltip will *disappear if you tap inside the tooltip*.
+
+      With an embedded link this gets tricky. So when a tool tip includes an
+      embedded markdown link, *the tooltip no longer disappears on a tap*.
+
+      Instead, if you tap the link then a browser will display the target of the
+      link. This is an [example of a link](https://togaware.com).
+
+      ---
+
+      ''',
+          child: ElevatedButton(
+            onPressed: () {},
+            child: const Text('Hover here to show a tooltip.'),
+          ),
+        ),
+      ],
     );
   }
 }
